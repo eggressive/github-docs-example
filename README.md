@@ -53,3 +53,9 @@ Use '>' to quote a block of text:
 ## References
 
 [#Step 1 - Using Codeblocks]
+
+## Footnotes
+
+This is a footnote.[^1]
+
+This is another footnote.[^2]
