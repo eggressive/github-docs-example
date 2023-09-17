@@ -65,3 +65,9 @@ x<sup>2</sup>
 ## References
 
 [Step 1 - Using Codeblocks] (#Step 1 - Using Codeblocks)
+
+## Footnotes
+
+This is a footnote.[^1]
+
+This is another footnote.[^2]
