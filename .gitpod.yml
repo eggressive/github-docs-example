@@ -9,13 +9,13 @@ tasks:
       gp sync-await bundle-install
       sleep 10
       bundle exec ruby server.rb
-  - name: preview
-    command: |
-      gp await-port 8080
-      gp preview $(gp url 8080)
+  # - name: preview
+  #   command: |
+  #     gp await-port 8080
+  #     gp preview $(gp url 8080)
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
   - port: 8080
-    onOpen: ignore
+    onOpen: open-preview
 
