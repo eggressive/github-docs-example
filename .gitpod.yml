@@ -8,14 +8,12 @@ tasks:
     command: |
       gp sync-await bundle-install
       bundle exec ruby server.rb
-  - name: frontend-run
+  - name: preview
     command: gp preview $(gp url 8080)
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
-  - name: Frontend
-    description: Port 8080 for the frontend
-    port: 8080
+  - port: 8080
     onOpen: open-preview
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
