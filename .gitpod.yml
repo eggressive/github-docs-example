@@ -7,6 +7,7 @@ tasks:
   - name: server-run
     command: |
       gp sync-await bundle-install
+      sleep 10
       bundle exec ruby server.rb
   - name: preview
     command: gp preview $(gp url 8080)

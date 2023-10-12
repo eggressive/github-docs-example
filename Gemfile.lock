@@ -13,12 +13,14 @@ GEM
       rack-protection (= 3.1.0)
       tilt (~> 2.0)
     tilt (2.3.0)
+    webrick (1.8.1)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   sinatra
+  webrick
 
 BUNDLED WITH
    2.4.20
