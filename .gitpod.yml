@@ -21,3 +21,8 @@ tasks:
     command: |
       echo 'Hello '
       echo 'World'
+
+  - name: "multiline combine"
+    command: >
+      echo 'Hello';
+      echo 'World'
