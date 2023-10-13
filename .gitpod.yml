@@ -18,14 +18,11 @@ tasks:
       gp sync-await bundle-install
       APP_PORT=8001 bundle exec ruby server.rb
   - name: open-browser
-    command: |
-      gp sync-await bundle-install
-      APP_PORT=8002 bundle exec ruby server.rb
-  - name: ignore
-    command: |
-      gp sync-await bundle-install
-      APP_PORT=8003 bundle exec ruby server.rb
 
 ports:
-  - port: 8000-8003
+  - port: 8000
     onOpen: open-browser
+    visibility: public
+  - port: 8001
+    onOpen: open-preview
+    visibility: private
