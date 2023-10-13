@@ -27,11 +27,5 @@ tasks:
       APP_PORT=8003 bundle exec ruby server.rb
 
 ports:
-  - port: 8000
-    onOpen: notify
-  - port: 8001
-    onOpen: open-preview
-  - port: 8002
+  - port: 8000-8003
     onOpen: open-browser
-  - port: 8003
-    onOpen: ignore
