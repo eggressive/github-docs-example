@@ -1,7 +1,7 @@
 require 'sinatra'
 
-set :port, 8080
+set :port, ENV["APP_PORT"]
 
 get '/' do
-    'Hello, world!'
+    "Frank says from port: #{ENV["APP_PORT"]}, Hello, world!"
 end
