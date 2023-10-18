@@ -5,6 +5,9 @@ image:
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
   - name: Script Task
+    env:
+      # Set environment variables. Learn more: https://www.gitpod.io/docs/configure/environment-variables
+      MITKO_VAR: 'Hello World'
     command: echo 'Hello World<>'
 
 # # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
