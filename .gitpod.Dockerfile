@@ -1,3 +1,3 @@
 FROM gitpod/workspace-full:latest
 
-RUN brew install fzf
+RUN brew install fzf rsync
